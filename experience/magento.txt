@@ -1,0 +1,12 @@
+Magento index error
+php -dmemory_limit=5G bin/magento indexer:reindex
+php -dmemory_limit=5G bin/magento  cache:flush
+
+Magento memory exhausted
+php -dmemory_limit=5G bin/magento
+
+Magento statice fils(CSS broken)
+sudo rm -rf pub/static/*
+sudo rm -rf var/view_preprocessed/*
+sudo php -dmemory_limit=4G bin/magento setup:static-content:deploy -f
+sudo php bin/magento cache:clean

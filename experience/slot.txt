@@ -1,0 +1,23 @@
+United State 14 before
+Am: 10-12 8-12
+Pm: 10-12
+
+United Kingdom 9 before
+Am: 5-7 3-7
+Pm: 5-7
+
+Austrilla 2 past
+Am: 6-8
+Pm: 6-8 4-8
+
+Workig time
+Am: 8-10
+Pm: 8-10 6-10
+
+Final
+Am: 8-12
+Pm: 3-10
+
+Final Important
+Am: 8-10
+Pm: 5-10

@@ -1,0 +1,31 @@
+Listen 80
+NameVirtualHost *:80
+
+Listen 8080    
+NameVirtualHost *:8080
+
+<VirtualHost *:80 *:8080>
+  ServerName some.domain.name
+  ServerAlias some.other.domain.name
+  ....
+</VirtualHost>
+
+////////////////////////////////////
+SSLStrictSNIVHostCheck off
+# Apache setup which will listen for and accept SSL connections on port 443.
+Listen 443
+# Listen for virtual host requests on all IP addresses
+NameVirtualHost *:443
+
+<VirtualHost *:443>
+  ServerName domain.localhost
+  DocumentRoot "/Users/<my_user_name>/Sites/domain/public"
+  <Directory "/Users/<my_user_name>/Sites/domain/public">
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+  # SSL Configuration
+  SSLEngine on
+  ...
+</VirtualHost>

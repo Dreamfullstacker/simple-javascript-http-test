@@ -1,0 +1,15 @@
+1. go to xampp/apache/conf/httpd.conf and add below code
+Listen 8080 // new listening port
+
+2. go to  xampp/apache/conf/extra/httpd-vhosts.conf add below code:
+ 
+    DocumentRoot "[drive path]:/xampp/htdocs/project name"
+    ServerName 127.0.0.1:8080
+   
+        Options -Indexes +FollowSymLinks +MultiViews
+        AllowOverride All
+        Require all granted
+   
+
+3. C:/Windows/System32/drivers/etc/hosts and add below line
+127.0.0.1      127.0.0.1:8080 // host for [project name].

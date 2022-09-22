@@ -1,0 +1,4 @@
+install expo cli
+npm i expo-cli
+add redux to react native expo app
+npm i react-redux --legacy-peer-deps

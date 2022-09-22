@@ -1,0 +1,6 @@
+adb connect 127.0.0.1:21503
+cd android
+delete android\app\build
+gradlew clean
+cd ..
+react-native run-android

@@ -1,0 +1,5 @@
+IP 10.10.12.148
+subnet 255.255.254.0
+GateWay 10.10.12.1
+Preferred DNS 8.8.8.8
+Alternate DNS 8.8.4.4

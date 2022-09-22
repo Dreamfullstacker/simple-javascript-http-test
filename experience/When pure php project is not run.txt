@@ -1,0 +1,2 @@
+In Php.ini file
+short_open_tag=On

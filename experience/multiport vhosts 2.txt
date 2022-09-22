@@ -1,0 +1,42 @@
+httpd.conf
+C:\xampp\apache\conf\httpd.conf
+
+Listen 80
+Listen 8080
+Listen 8085
+httpd-vhosts.conf
+C:\xampp\apache\conf\extra\httpd-vhosts.conf
+
+# Use name-based virtual hosting.
+#
+##NameVirtualHost *:80
+#
+# VirtualHost example:
+# Almost any Apache directive may go into a VirtualHost container.
+# The first VirtualHost section is used for all requests that do not
+# match a ##ServerName or ##ServerAlias in any <VirtualHost> block.
+#
+##<VirtualHost *:80>
+    ##ServerAdmin webmaster@dummy-host.example.com
+    ##DocumentRoot "C:/xampp/htdocs/dummy-host.example.com"
+    ##ServerName dummy-host.example.com
+    ##ServerAlias www.dummy-host.example.com
+    ##ErrorLog "logs/dummy-host.example.com-error.log"
+    ##CustomLog "logs/dummy-host.example.com-access.log" common
+##</VirtualHost>
+
+##<VirtualHost *:80>
+    ##ServerAdmin webmaster@dummy-host2.example.com
+    ##DocumentRoot "C:/xampp/htdocs/dummy-host2.example.com"
+    ##ServerName dummy-host2.example.com
+    ##ErrorLog "logs/dummy-host2.example.com-error.log"
+    ##CustomLog "logs/dummy-host2.example.com-access.log" common
+##</VirtualHost>
+<VirtualHost *:8080>
+    DocumentRoot "C:/xampp/htdocs/site2"
+    ServerName site2
+</VirtualHost>
+<VirtualHost *:8085>
+    DocumentRoot "C:/xampp/htdocs/site3"
+    ServerName site3
+</VirtualHost>

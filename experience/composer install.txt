@@ -1,0 +1,5 @@
+composer install --ignore-platform-reqs
+
+or
+
+composer update --ignore-platform-reqs
